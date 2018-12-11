@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/main.js"></script>
+</head>
+<body>
+    <p>I didn't make difficult frontend. All checks in backend</p>
+    <form id="formToSend">
+        <label>Method</label>
+        <select name="method">
+            <option selected value="withdrawal">withdrawal</option>
+            <option value="deposit">deposit</option>
+            <option value="transfer">transfer</option>
+            <option value="get_balances">get_balances</option>
+        </select>
+        <label>Account</label>
+        <select name="account">
+            <option selected value=""></option>
+            <option value="alice">alice</option>
+            <option value="bob">bob</option>
+        </select>
+        <label>Date</label>
+        <input type="date" name="date">
+        <label>Amount</label>
+        <input name="amt" type="number">
+        <label>Currency</label>
+        <select name="ccy">
+            <option selected value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="RUB">RUB</option>
+        </select>
+        <label>From account</label>
+        <select name="from_account">
+            <option selected value=""></option>
+            <option value="alice">alice</option>
+            <option value="bob">bob</option>
+        </select>
+        <label>To account</label>
+        <select name="to_account">
+            <option selected value=""></option>
+            <option value="alice">alice</option>
+            <option value="bob">bob</option>
+        </select>
+        <input type="button" value="Send" onclick="sendSocket()">
+    </form>
+</body>
+<script>
+
+</script>
+</html>
